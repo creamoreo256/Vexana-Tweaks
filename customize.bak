@@ -13,7 +13,7 @@ ui_print "                 Vexana tweaks                   "
 ui_print " _______________________________________________ "
 sleep 0.5
 ui_print " "
-ui_print " • Version         : v2.0"
+ui_print " • Version         : v1.9"
 ui_print " • Release Date    : 05-02-2025"
 ui_print " • Owner           : @cream_oreo"
 sleep 0.5

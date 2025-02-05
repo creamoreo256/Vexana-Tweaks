@@ -97,16 +97,6 @@ change_swap()
     fi
 }
 
-# Deepsleep functions
-doze_default()
-{
-    dumpsys deviceidle enable
-}
-
-force_idle()
-{
-    dumpsys deviceidle force-idle 
-}
 sleep 1
 
 # Fast charging function 
@@ -133,9 +123,6 @@ disable_thermal_service
 
 # Swap ram
 #change_swap
-
-# Doze mode
-#doze_default
 
 # Fstrim
 fstrim -v /cache

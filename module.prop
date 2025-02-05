@@ -1,7 +1,7 @@
-id=VexanaTweaks
-name=Vexana
-version=v1.8
-versionCode=18092024
+id=VTweaks
+name=Vexana Tweaks
+version=v1.9
+versionCode=50225
 author=Ryuzee_project
 description=Vexana is a tweaks are made for magisk module with a little spice in the kitchen.
-
+updateJson=https://raw.githubusercontent.com/creamoreo256/Vexana-tweaks/master/update.json

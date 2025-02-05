@@ -13,8 +13,8 @@ ui_print "                 Vexana tweaks                   "
 ui_print " _______________________________________________ "
 sleep 0.5
 ui_print " "
-ui_print " • Version         : v1.8"
-ui_print " • Release Date    : 18-09-2024"
+ui_print " • Version         : v1.9"
+ui_print " • Release Date    : 05-02-2025"
 ui_print " • Owner           : @cream_oreo"
 sleep 0.5
 ui_print " "
@@ -117,7 +117,7 @@ done
 ui_print "    Selected: $A"
 case $A in
     1 ) TEXT1="Yes"; sed -i '/#enable_thermal_service/s/.*/enable_thermal_service/' $MODPATH/service.sh; sed -i '/#disable_thermal_service/s/.*/disable_thermal_service/' $MODPATH/service.sh;;
-    2 ) TEXT1="No";;
+    2 ) TEXT1="No"; rm -rf $MODPATH/system/vendor/bin; rm -rf $MODPATH/system/vendor/etc;;
 esac
 ui_print "    $TEXT1"
 ui_print ""
@@ -199,7 +199,7 @@ while true; do
 done
 ui_print "  Selected: $CH"
 case $CH in
-    1 ) FSC="Default"; rm -rf $MODPATH/system/vendor/etc; rm -rf system/etc;;
+    1 ) FSC="Default"; rm -rf $MODPATH/system/etc;;
     2 ) FSC="33w 6000mA⚡"; sed -i '/#fc/s/.*/fc/' $MODPATH/service.sh;;
 esac
 ui_print "    $FSC"
